@@ -1,6 +1,16 @@
+var date = new Date();
+var hours = date.getHours();
+var minutes = date.getMinutes();
+var seconds = date.getSeconds();
+var timestamp = hours*3600 + minutes*60 + seconds;
+$('#room_id').val(timestamp);
+
+
 function get_link() {
   var vcrx = "https://vcrxtopkidtrial.topica.vn/"
 
+
+  
   var room_id = document.getElementById('room_id').value;
   var link_slide = document.getElementById('link_slide').value;
   // Input to keep the place holder
