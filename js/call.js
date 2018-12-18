@@ -17,10 +17,10 @@ function get_link() {
         "userId": 2,
         "userName": " Giao Vien",
         "userRole": "STUDENT",
-        "meetingId": 2,
+        "meetingId": room_id,
         "email": "sontm2@topica.edu.vn",
         "video_warmup": "",
-        "link_slide": room_id,
+        "link_slide": link_slide,
         "idVcrx": "0",
         "idRoomVcrx":"",
         "moodleToken": ""
