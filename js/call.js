@@ -83,7 +83,6 @@ function render(){
 
 function copy_link(input_id){
   var my_link = document.getElementById(input_id);
-
   my_link.select();
   document.execCommand("copy");
   $('.message').text("Đã copy link");

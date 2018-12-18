@@ -181,7 +181,7 @@ iframe {
 }
 
 .wrap-login100 {
-  width: 500px;
+  width: 800px;
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -379,7 +379,7 @@ iframe {
 }
 
 .message{
-  margin-top:20px;
+  margin-bottom:20px;
 }
 /*------------------------------------------------------------------
 [ Alert validate ]*/
