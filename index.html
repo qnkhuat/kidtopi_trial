@@ -34,7 +34,7 @@
 			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
 				<form class="login100-form validate-form">
 					<span class="login100-form-title p-b-49">
-						Topkid
+						Wowkid
 					</span>
 
 					<div class="wrap-input100 validate-input m-b-23" data-validate = "Username is reauired">
@@ -53,18 +53,42 @@
 
 					</div>
 				</form>
+
 				<div class="container-login100-form-btn">
 					<div class="wrap-login100-form-btn">
 						<div class="login100-form-bgbtn"></div>
-						<button class="login100-form-btn" onclick="get_link()">
-							Copy link
+						<button class="login100-form-btn" onclick="render();copy_link($(this).attr('name'));" id='get_link' name='teacher_input'>
+							Giao vien
 						</button>
+						<input type="text" class='getout' value='' id="teacher_input" >
+					</div>
+				</div>
+
+				<div class="container-login100-form-btn">
+					<div class="wrap-login100-form-btn">
+						<div class="login100-form-bgbtn"></div>
+						<button class="login100-form-btn" onclick="render();copy_link($(this).attr('name'));" id='get_link' name='student_input'>
+							Hoc sinh
+						</button>
+						<input type="text" class='getout' value='' id="student_input" >
+					</div>
+				</div>
+
+				<div class="container-login100-form-btn">
+					<div class="wrap-login100-form-btn">
+						<div class="login100-form-bgbtn"></div>
+						<button class="login100-form-btn" onclick="render();copy_link($(this).attr('name'));" id='get_link' name='assist_input'>
+							Ho tro
+						</button>
+						<input type="text" class='getout' value='' id="assist_input" >
 					</div>
 				</div>
 				<h5 class='text-center message'></h5>
 
 			</div>
-			<input type="text" class='getout' value="Hello World" id="my_link" >
+
+
+
 		</div>
 	</div>
 
