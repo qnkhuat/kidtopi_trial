@@ -39,33 +39,35 @@
 
 					<div class="wrap-input100 validate-input m-b-23" data-validate = "Username is reauired">
 						<span class="label-input100">Room id</span>
-						<input class="input100" type="number" name="room" placeholder="Type room id">
+						<input  id='room_id' class="input100" type="number" name="room" placeholder="Type room id" >
 						<span class="focus-input100" data-symbol="&#xf206;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Password is required">
 						<span class="label-input100">Link slide</span>
-						<input class="input100" type="text" name="link" placeholder="Type your link slide">
+						<input id='link_slide' class="input100" type="text" name="link" placeholder="Type your link slide" required>
 						<span class="focus-input100" data-symbol="&#xf190;"></span>
 					</div>
 
 					<div class="text-right p-t-8 p-b-31">
 
 					</div>
-
-					<div class="container-login100-form-btn">
-						<div class="wrap-login100-form-btn">
-							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn" onclick="">
-								Get rock
-							</button>
-						</div>
-					</div>
-
 				</form>
+				<div class="container-login100-form-btn">
+					<div class="wrap-login100-form-btn">
+						<div class="login100-form-bgbtn"></div>
+						<button class="login100-form-btn" onclick="get_link()">
+							Copy link
+						</button>
+					</div>
+				</div>
+				<h5 class='text-center message'></h5>
+
 			</div>
+			<input type="text" class='getout' value="Hello World" id="my_link" >
 		</div>
 	</div>
+
 
 
 	<div id="dropDownSelect1"></div>
@@ -86,6 +88,7 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	<script src="js/call.js"></script>
 
 </body>
 </html>
