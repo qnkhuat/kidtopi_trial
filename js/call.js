@@ -5,7 +5,7 @@ var minutes = date.getMinutes();
 var seconds = date.getSeconds();
 var timestamp = hours*3600 + minutes*60 + seconds;
 $('#room_id').val(timestamp);
-$('#link_slide').val('https://topkid.topica.vn/topkid_mat/Lesson2.pdf');
+$('#link_slide').val('http://topkid.topica.vn/trial/slides/demo.pdf');
 
 var token = "Ngociscoming";
 
