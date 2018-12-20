@@ -7,7 +7,7 @@ var timestamp = hours*3600 + minutes*60 + seconds;
 $('#room_id').val(timestamp);
 $('#link_slide').val('https://topkid.topica.vn/topkid_mat/Lesson2.pdf');
 
-var token = login_vcrx();
+var token = "Ngociscoming";
 
 function login_vcrx(){
   var settings = {
@@ -32,7 +32,7 @@ function login_vcrx(){
 
 function get_link(role='STUDENT') {
   // var token = login_vcrx();
-  var vcrx = "https://vcrxtopkidtrial.topica.vn/"
+  var vcrx = "https://vcrx.wowkid.edu.vn/";
 
   var room_id = document.getElementById('room_id').value;
   var link_slide = document.getElementById('link_slide').value;
