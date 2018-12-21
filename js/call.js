@@ -18,7 +18,6 @@ function login_vcrx(){
     "headers": {
       "Content-Type": "application/json",
       "cache-control": "no-cache",
-      "Postman-Token": "cc5e946f-5331-4402-bfe2-a5565d2c7b70"
     },
     "processData": false,
     "data": "{\"username\":\"ADMIN\",\"password\":\"123456\"}"
@@ -38,14 +37,23 @@ function get_link(role='STUDENT') {
   var link_slide = document.getElementById('link_slide').value;
   // Input to keep the place holder
 
+  switch (role) {
+      case 'STUDENT':
+        userId= 0;
+        break;
+      case 'PO':
+        userId = 1;
+        break;
+      case 'teacher':
+        userId = 2;
+    }
   if (room_id.length >0){
-
     // Render link
     var obj = {
         "token": login_vcrx,
         "topic": "Lesson 2",
         "timeStart": "1543460400",
-        "userId": 2,
+        "userId": userId,
         "userName": "",
         "userRole": role,
         "meetingId": room_id,
@@ -56,7 +64,6 @@ function get_link(role='STUDENT') {
         "idRoomVcrx":"",
         "moodleToken": ""
     };
-
     var str = btoa(jQuery.param(obj));
     var url = vcrx +room_id+"?token=" +str;
 
