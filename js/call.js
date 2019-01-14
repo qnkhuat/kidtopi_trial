@@ -1,4 +1,5 @@
 
+var vcrx ="https://vcrx-v2.wowkid.edu.vn/"
 var date = new Date();
 var hours = date.getHours();
 var minutes = date.getMinutes();
@@ -10,10 +11,11 @@ $('#link_slide').val('https://topkid.topica.vn/trial/slides/demo.pdf');
 var token = "Ngociscoming";
 
 function login_vcrx(){
+  var vcrx_login = vcrx + "api/user/login"
   var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "https://vcrxapitester.topica.vn/api/user/login",
+    "url": vcrx_login,
     "method": "POST",
     "headers": {
       "Content-Type": "application/json",
@@ -31,7 +33,7 @@ function login_vcrx(){
 
 function get_link(role='STUDENT') {
   // var token = login_vcrx();
-  var vcrx = "https://vcrx.wowkid.edu.vn/";
+  //var vcrx = "https://vcrx.wowkid.edu.vn/";
 
   var room_id = document.getElementById('room_id').value;
   var link_slide = document.getElementById('link_slide').value;
