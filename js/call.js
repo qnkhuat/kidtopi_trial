@@ -1,5 +1,5 @@
 
-var vcrx ="https://vcrx-v2.wowkid.edu.vn/"
+var vcrx = "https://vcrx-v2.wowkid.edu.vn/"
 var date = new Date();
 var hours = date.getHours();
 var minutes = date.getMinutes();
